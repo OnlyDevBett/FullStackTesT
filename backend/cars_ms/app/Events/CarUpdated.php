@@ -23,7 +23,7 @@ class CarUpdated implements ShouldBroadcast
         $this->car = $car;
     }
 
-    public function broadcastOn()
+    public function broadcastOn(): Channel
     {
         return new Channel('cars');
     }
